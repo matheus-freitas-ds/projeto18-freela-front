@@ -33,16 +33,16 @@ export default function LoginPage() {
                     minLength={3}
                     type="password"
                     autoComplete="new-password"
-                    placeholder="Senha"
+                    placeholder="Password"
                     name="password"
                     value={form.password}
                     onChange={handleForm}
                 />
-                <button type="submit">Entrar</button>
+                <button type="submit">Enter</button>
             </form>
 
-            <Link to="/cadastro">
-                Primeira vez? Cadastre-se!
+            <Link to="/sign-up">
+                First time? Sign up!
             </Link>
         </LoginContainer>
     )

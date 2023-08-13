@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { styled } from "styled-components"
 import LoginPage from "./pages/LoginPage"
+import SignUpPage from "./pages/SignUpPage"
 import authContext from "./contexts/AuthContext.js"
 import { useState } from "react"
 import { mainColor } from "./constants/colors.js"
@@ -15,6 +16,7 @@ export default function App() {
         <BrowserRouter>
           <Routes>
             <Route path = "/" element = { <LoginPage /> } />
+            <Route path = "/sign-up" element = { <SignUpPage /> } />
           </Routes>
         </BrowserRouter>
       </authContext.Provider>
