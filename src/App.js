@@ -15,7 +15,7 @@ export default function App() {
       <authContext.Provider value={{ token, setToken, userName, setUserName }}>
         <BrowserRouter>
           <Routes>
-            <Route path = "/" element = { <LoginPage /> } />
+            <Route path = "/login" element = { <LoginPage /> } />
             <Route path = "/sign-up" element = { <SignUpPage /> } />
           </Routes>
         </BrowserRouter>
