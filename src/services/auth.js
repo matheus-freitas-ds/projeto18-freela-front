@@ -18,7 +18,7 @@ export function useLogin() {
     const { setToken, setUserName } = useContext(authContext)
 
     return (body) => {
-        axios.post(`${process.env.REACT_APP_API_URL}/login`, body)
+        axios.post(`${process.env.REACT_APP_API_URL}/`, body)
             .then(res => {
                 setToken(res.data.token)
                 setUserName(res.data.userName)

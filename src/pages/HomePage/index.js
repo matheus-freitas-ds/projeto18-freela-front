@@ -6,9 +6,10 @@ import { Link } from "react-router-dom"
 import { HomeContainer, Header, ProductsContainer, Footer } from "./styled.js"
 
 export default function HomePage() {
-    const { userName } = useContext(authContext)
+/*     const { userName } = useContext(authContext)
     const navigate = useNavigate()
-    useGetOut()
+    useGetOut() */
+
     return (
         <HomeContainer>
             <Header>

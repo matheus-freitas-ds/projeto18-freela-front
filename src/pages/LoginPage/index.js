@@ -7,7 +7,7 @@ import { LoginContainer } from "./styled.js"
 
 export default function LoginPage() {
     const { form, handleForm } = useForm({ email: "", password: "" })
-    const login = useLogin
+    const login = useLogin()
     useGetIn()
 
     function submitForm(e) {

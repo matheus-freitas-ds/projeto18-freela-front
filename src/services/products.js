@@ -18,7 +18,7 @@ export function useAddProduct() {
     const { token } = useContext(authContext)
     const navigate = useNavigate()
 
-    const config = { headers: { Authorization: `Bearer ${token}` } }
+    const config = { headers: { Authorization: `${token}` } }
 
     return (body) => {
         axios.post(`${process.env.REACT_APP_API_URL}/add-products`, body, config)

@@ -11,7 +11,7 @@ export default function AddProductPage() {
 
     function submitForm(e) {
         e.preventDefault()
-        const body = { form }
+        const body = { ...form }
         addProduct(body)
     }
 
