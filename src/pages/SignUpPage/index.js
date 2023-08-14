@@ -72,14 +72,13 @@ export default function SignUpPage() {
                     type="tel"
                     placeholder="Phone Number"
                     name="phone"
-                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                     value={form.phone}
                     onChange={handleForm}
                 />
                 <button type="submit">Sign Up</button>
             </form>
 
-            <Link to="/login">
+            <Link to="/">
                 Already have an account? Login now!
             </Link>
         </SingUpContainer>
